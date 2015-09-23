@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="pdfbox-app-2.0.0-20150917.170248-1649">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/pdfbox-app-2.0.0-20150917.170248-1649.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/pdfbox-trunk.zip!/pdfbox-trunk/fontbox/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/lib/pdfbox-trunk.zip!/pdfbox-trunk/fontbox/src/test/java" />
+      <root url="jar://$PROJECT_DIR$/lib/pdfbox-trunk.zip!/pdfbox-trunk/pdfbox/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/lib/pdfbox-trunk.zip!/pdfbox-trunk/pdfbox/src/test/java" />
+      <root url="jar://$PROJECT_DIR$/lib/pdfbox-trunk.zip!/pdfbox-trunk/preflight/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/lib/pdfbox-trunk.zip!/pdfbox-trunk/preflight/src/test/java" />
+      <root url="jar://$PROJECT_DIR$/lib/pdfbox-trunk.zip!/pdfbox-trunk/tools/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/lib/pdfbox-trunk.zip!/pdfbox-trunk/tools/src/test/java" />
+      <root url="jar://$PROJECT_DIR$/lib/pdfbox-trunk.zip!/pdfbox-trunk/xmpbox/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/lib/pdfbox-trunk.zip!/pdfbox-trunk/xmpbox/src/test/java" />
+    </SOURCES>
+  </library>
+</component>

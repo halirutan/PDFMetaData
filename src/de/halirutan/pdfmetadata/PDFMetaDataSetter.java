@@ -3,6 +3,7 @@ package de.halirutan.pdfmetadata;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDDocumentInformation;
 
+import java.io.File;
 import java.lang.reflect.Method;
 import java.util.HashSet;
 import java.util.Set;
@@ -32,9 +33,9 @@ public class PDFMetaDataSetter {
    * @param meta a list of {key1, value1, key2, value2, ...} pairs for setting meta data.
    * @return fileName of the pdf file or the exception message if something went wrong.
    */
-  public static String setMetaData(final String fileName, final String meta[]){
+  public static String setMetaData(final String fileName, final String outputFilename, final String meta[]){
     try {
-      PDDocument document = PDDocument.load(fileName);
+      PDDocument document = PDDocument.load(new File(fileName));
       final PDDocumentInformation information = document.getDocumentInformation();
       if (meta.length % 2 != 0) {
         throw new Exception("Meta-data list has not an even number of elements.");
@@ -50,7 +51,7 @@ public class PDFMetaDataSetter {
       }
 
       document.setDocumentInformation(information);
-      document.save(fileName);
+      document.save(outputFilename);
       document.close();
       return fileName;
     } catch (Exception e) {
